@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WF Relic Checklist</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="searchParts">
+		<input id="searchPartsBar" type='text' placeholder="Search Parts and Blueprints..." onfocus='partsFocus(true,this)' onfocusout='partsFocus(false)' onkeyup='searchPart(this)'/>
+		<button onclick="toggleShowParts()" title="Hide Parts"><img id="stock" src="https://i.imgur.com/vNDFczG.png"></button>
+		<button onclick="toggleVaulted('part')" title="Show Vaulted Items"><img id="vaultPart" src="https://i.imgur.com/RbCgY36.png"></button>
+		<ul id="parts"></ul>
+	</div>
+
+	<div id="searchRelics">
+		<input id="searchRelicsBar" type='text' placeholder="Search Relics..." onfocus='relicsFocus(true,this)' onfocusout='relicsFocus(false)' onkeyup='searchRelic(this)'/>
+		<button onclick="toggleVaulted('relic')" title="Show Vaulted Relics"><img id="vaultRelic" src="https://i.imgur.com/RbCgY36.png"></button>
+		
+		<ul id="relics"></ul>
+	</div>
+	
+
+<!-- 	<datalist id="parts"></datalist> -->
+
+	<div id="items">
+
+	</div>
+	<p id="debug"></p>
+</body>
+<script src="js/helper.js"></script>
+<script src="js/script.js"></script>
+</html>

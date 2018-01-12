@@ -1,0 +1,452 @@
+{
+	"ref":{
+		"wiki":"http://warframe.wikia.com/wiki/",
+		"img":"https://vignette.wikia.nocookie.net/warframe/images/",
+		"scaleImg":".png/revision/latest/scale-to-width-down/",
+		"relics":{
+			"lith":"a/ae/VoidProjectionsIronD",
+			"meso":"1/12/VoidProjectionsBronzeD",
+			"neo":"c/c5/VoidProjectionsSilverD",
+			"axi":"0/0e/VoidProjectionsGoldD"
+		},
+		"icons":{
+			"forma":"b/b1/Forma2",
+			"neuroptics":"c/c1/PrimeHelmet",
+			"chassis":"e/ef/PrimeChassis",
+			"systems":"d/d2/PrimeSystems",
+			"barrel":"2/2f/GenericGunPrimeBarrel",
+			"receiver":"0/03/GenericGunPrimeReceiver",
+			"stock":"6/66/GenericGunPrimeStock",
+			"blade":"f/f8/GenericWeaponPrimeBlade",
+			"latch":"f/ff/GenericComponentPrimeLatch",
+			"hilt":"e/ea/GenericWeaponPrimeHilt",
+			"guard":"5/5c/GenericWeaponPrimeGuard",
+			"link":"b/b3/GenericComponentPrimePlug",
+			"harness":"c/cd/GenericArchwingHarness",
+			"wings":"d/de/GenericArchwingWings",
+			"arcSystems":"b/bf/GenericArchwingSystems",
+			"cerebrum":"3/37/Helmet",
+			"carapace":"d/dd/Chassis",
+			"compSystems":"e/e0/Systems"
+		},
+		"partsRef":{
+			"limb":"blade",
+			"blades":"blade",
+			"grip":"latch",
+			"string":"stock",
+			"gauntlet":"hilt",
+			"boot":"guard",
+			"head":"blade",
+			"disc":"blade",
+			"handle":"hilt",
+			"pouch":"latch",
+			"ornament":"link",
+			"stars":"blade",
+			"band":"latch",
+			"buckle":"link"
+		}
+	},
+	"frames":{
+		"ash":{
+			"id":"a",
+			"name":"Ash Prime",
+			"img":"8/8e/AshPrimeIcon",
+			"mr":0,
+			"state":"v"
+		},
+		"banshee":{
+			"id":"b",
+			"name":"Banshee Prime",
+			"img":"8/8e/BansheePrimeIcon",
+			"mr":8,
+			"state":"u"
+		},
+		"ember":{
+			"id":"e",
+			"name":"Ember Prime",
+			"img":"4/4f/PrimeEmber",
+			"mr":0,
+			"state":"v"
+		},
+		"frost":{
+			"id":"f",
+			"name":"Frost Prime",
+			"img":"f/f7/PrimeFrost",
+			"mr":0,
+			"state":"v"
+		},
+		"hydroid":{
+			"id":"h",
+			"name":"Hydroid Prime",
+			"img":"6/6f/HydroidPrimeBust",
+			"mr":5,
+			"state":"u"
+		},
+		"loki":{
+			"id":"l",
+			"name":"Loki Prime",
+			"img":"f/f6/PrimeLoki",
+			"mr":0,
+			"state":"v"
+		},
+		"mag":{
+			"id":"m",
+			"name":"Mag Prime",
+			"img":"c/cc/PrimeMag",
+			"mr":0,
+			"state":"v"
+		},
+		"mirage":{
+			"id":"i",
+			"name":"Mirage Prime",
+			"img":"f/ff/MiragePrime",
+			"mr":8,
+			"state":"u"
+		},
+		"nekros":{
+			"id":"k",
+			"name":"Nekros Prime",
+			"img":"5/5d/NekrosPrimeProfilePicture",
+			"mr":0,
+			"state":"u"
+		},
+		"nova":{
+			"id":"n",
+			"name":"Nova Prime",
+			"img":"5/51/PrimeNova",
+			"mr":0,
+			"state":"v"
+		},
+		"nyx":{
+			"id":"x",
+			"name":"Nyx Prime",
+			"img":"8/80/PrimeNyx",
+			"mr":0,
+			"state":"v"
+		},
+		"oberon":{
+			"id":"o",
+			"name":"Oberon Prime",
+			"img":"d/da/OberonPrime",
+			"mr":8,
+			"state":"u"
+		},
+		"rhino":{
+			"id":"r",
+			"name":"Rhino Prime",
+			"img":"5/5e/PrimeRhino",
+			"mr":0,
+			"state":"v"
+		},
+		"saryn":{
+			"id":"s",
+			"name":"Saryn Prime",
+			"img":"5/5b/SarynPrimeIcon",
+			"mr":0,
+			"state":"v"
+		},
+		"trinity":{
+			"id":"t",
+			"name":"Trinity Prime",
+			"img":"1/11/TrinityPrimeIcon",
+			"mr":0,
+			"state":"v"
+		},
+		"valkyr":{
+			"id":"y",
+			"name":"Valkyr Prime",
+			"img":"1/14/ValkyrPrimeProfilePicture",
+			"mr":0,
+			"state":"u"
+		},
+		"vauban":{
+			"id":"u",
+			"name":"Vauban Prime",
+			"img":"a/a6/Booben",
+			"mr":0,
+			"state":"n"
+		},
+		"volt":{
+			"id":"v",
+			"name":"Volt Prime",
+			"img":"f/f4/VoltPrimeIcon",
+			"mr":0,
+			"state":"v"
+		}
+	},
+	"weapons":{
+	  "boar": {
+	    "id": "pb",
+	    "name": "Boar Prime",
+	    "img": "e/e7/FixedPrimeBoar",
+	    "mr": 2,
+	    "state": "v"
+	  },
+	  "boltor": {
+	    "id": "bo",
+	    "name": "Boltor Prime",
+	    "img": "5/59/DEPrimeBoltor",
+	    "mr": 2,
+	    "state": "v"
+	  },
+	  "braton": {
+	    "id": "br",
+	    "name": "Braton Prime",
+	    "img": "0/02/PrimeBraton",
+	    "mr": 0,
+	    "state": "u"
+	  },
+	  "burston": {
+	    "id": "bu",
+	    "name": "Burston Prime",
+	    "img": "8/83/PrimeBurston",
+	    "mr": 0,
+	    "state": "u"
+	  },
+	  "cernos": {
+	    "id": "pc",
+	    "name": "Cernos Prime",
+	    "img": "0/06/CernosPrime",
+	    "mr": 8,
+	    "state": "u"
+	  },
+	  "latron": {
+	    "id": "pl",
+	    "name": "Latron Prime",
+	    "img": "c/c1/DELatronPrime",
+	    "mr": 0,
+	    "state": "v"
+	  },
+	  "paris": {
+	    "id": "pp",
+	    "name": "Paris Prime",
+	    "img": "7/75/PrimeBowM",
+	    "mr": 4,
+	    "state": "u"
+	  },
+	  "soma": {
+	    "id": "ps",
+	    "name": "Soma Prime",
+	    "img": "a/a6/PrimeSoma",
+	    "mr": 6,
+	    "state": "v"
+	  },
+	  "sybaris": {
+	    "id": "py",
+	    "name": "Sybaris Prime",
+	    "img": "8/8b/Sybaris_Prime",
+	    "mr": 12,
+	    "state": "u"
+	  },
+	  "tigris": {
+	    "id": "pt",
+	    "name": "Tigris Prime",
+	    "img": "a/aa/PrimeTigris342",
+	    "mr": 13,
+	    "state": "u"
+	  },
+	  "vectis": {
+	    "id": "pv",
+	    "name": "Vectis Prime",
+	    "img": "6/68/VectisPrime",
+	    "mr": 3,
+	    "state": "v"
+	  },
+	  "akbolto": {
+	    "id": "sa",
+	    "name": "Akbolto Prime",
+	    "img": "8/88/MirageAkboltoPrime",
+	    "mr": 13,
+	    "state": "u"
+	  },
+	  "akbronco": {
+	    "id": "sr",
+	    "name": "Akbronco Prime",
+	    "img": "a/af/DEPrimeDualBroncos",
+	    "mr": 11,
+	    "state": "u"
+	  },
+	  "aklex": {
+	    "id": "sx",
+	    "name": "Aklex Prime",
+	    "img": "6/61/Aklex_Prime",
+	    "mr": 8,
+	    "state": "v"
+	  },
+	  "akstiletto": {
+	    "id": "st",
+	    "name": "Akstiletto Prime",
+	    "img": "4/43/PrimeAkstiletto",
+	    "mr": 5,
+	    "state": "n"
+	  },
+	  "ballistica": {
+	    "id": "sc",
+	    "name": "Ballistica Prime",
+	    "img": "d/db/PrimeBallistica",
+	    "mr": 7,
+	    "state": "u"
+	  },
+	  "bronco": {
+	    "id": "sb",
+	    "name": "Bronco Prime",
+	    "img": "c/c8/PrimeBronco",
+	    "mr": 3,
+	    "state": "u"
+	  },
+	  "euphona": {
+	    "id": "se",
+	    "name": "Euphona Prime",
+	    "img": "2/23/EuphoraPrime",
+	    "mr": 14,
+	    "state": "u"
+	  },
+	  "hikou": {
+	    "id": "sh",
+	    "name": "Hikou Prime",
+	    "img": "b/b4/PrimeHikou",
+	    "mr": 2,
+	    "state": "v"
+	  },
+	  "lex": {
+	    "id": "sl",
+	    "name": "Lex Prime",
+	    "img": "9/9e/PrimeLex",
+	    "mr": 5,
+	    "state": "u"
+	  },
+	  "sicarus": {
+	    "id": "ss",
+	    "name": "Sicarus Prime",
+	    "img": "d/d7/DESicarus_Prime",
+	    "mr": 7,
+	    "state": "v"
+	  },
+	  "spira": {
+	    "id": "sp",
+	    "name": "Spira Prime",
+	    "img": "0/02/PrimeLiDagger",
+	    "mr": 3,
+	    "state": "v"
+	  },
+	  "vasto": {
+	    "id": "sv",
+	    "name": "Vasto Prime",
+	    "img": "f/f6/PrimeVasto",
+	    "mr": 3,
+	    "state": "v"
+	  },
+	  "ankyros": {
+	    "id": "ma",
+	    "name": "Ankyros Prime",
+	    "img": "d/d4/DEPrimeAnkyros",
+	    "mr": 0,
+	    "state": "v"
+	  },
+	  "bo": {
+	    "id": "mb",
+	    "name": "Bo Prime",
+	    "img": "1/1b/PrimeBo",
+	    "mr": 5,
+	    "state": "v"
+	  },
+	  "dakra": {
+	    "id": "md",
+	    "name": "Dakra Prime",
+	    "img": "8/86/SwordPrime",
+	    "mr": 6,
+	    "state": "v"
+	  },
+	  "kamas": {
+	    "id": "mm",
+	    "name": "Dual Kamas Prime",
+	    "img": "5/5b/DualKamasPrime",
+	    "mr": 6,
+	    "state": "v"
+	  },
+	  "fang": {
+	    "id": "mf",
+	    "name": "Fang Prime",
+	    "img": "2/2b/PrimeFang",
+	    "mr": 0,
+	    "state": "u"
+	  },
+	  "fragor": {
+	    "id": "mh",
+	    "name": "Fragor Prime",
+	    "img": "d/d7/PrimeFragor",
+	    "mr": 7,
+	    "state": "n"
+	  },
+	  "galatine": {
+	    "id": "mg",
+	    "name": "Galatine Prime",
+	    "img": "0/0c/PrimeGalatine342",
+	    "mr": 13,
+	    "state": "u"
+	  },
+	  "glaive": {
+	    "id": "mi",
+	    "name": "Glaive Prime",
+	    "img": "7/73/PrimeGlaive",
+	    "mr": 10,
+	    "state": "v"
+	  },
+	  "kogake": {
+	    "id": "mk",
+	    "name": "Kogake Prime",
+	    "img": "4/4c/MirageKogakePrime",
+	    "mr": 10,
+	    "state": "u"
+	  },
+	  "skyla": {
+	    "id": "ms",
+	    "name": "Nami Skyla Prime",
+	    "img": "6/68/PrimeNamiSkyla",
+	    "mr": 11,
+	    "state": "u"
+	  },
+	  "nikana": {
+	    "id": "mn",
+	    "name": "Nikana Prime",
+	    "img": "3/31/PrimeNikana",
+	    "mr": 0,
+	    "state": "v"
+	  },
+	  "orthos": {
+	    "id": "mo",
+	    "name": "Orthos Prime",
+	    "img": "2/2a/PrimePolearm",
+	    "mr": 2,
+	    "state": "u"
+	  },
+	  "reaper": {
+	    "id": "mr",
+	    "name": "Reaper Prime",
+	    "img": "6/67/ReaperPrime",
+	    "mr": 2,
+	    "state": "v"
+	  },
+	  "scindo": {
+	    "id": "mc",
+	    "name": "Scindo Prime",
+	    "img": "3/38/PrimeScindo",
+	    "mr": 4,
+	    "state": "v"
+	  },
+	  "aegis": {
+	    "id": "m&",
+	    "name": "Silva & Aegis Prime",
+	    "img": "f/f7/SilvaAegisPrime",
+	    "mr": 12,
+	    "state": "u"
+	  },
+	  "venka": {
+	    "id": "mv",
+	    "name": "Venka Prime",
+	    "img": "1/12/VenkaPrime",
+	    "mr": 8,
+	    "state": "u"
+	  }
+	}
+}
