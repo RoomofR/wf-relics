@@ -52,7 +52,7 @@ function searchPart(search){
 						relicHtml+=`<li style="color:${{"Common":"#9c784e","Uncommon":"#b4b7d0","Rare":"#e6bd68"}[rel.rarity]}">${relic} ${rel.rarity} ${(rel.vaulted)?"(V)":""}<img src="${img}"></li>`;
 					});
 
-					partHtml+=`<ul style="display:none" class="dropsDetails">${relicHtml}</ul></li>`
+					partHtml+=`<ul style="display:none" id="dropsDetailsParts" class="dropsDetails">${relicHtml}</ul></li>`
 					partList.innerHTML+=partHtml;
 				}
 			}
