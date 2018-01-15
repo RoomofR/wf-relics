@@ -110,7 +110,7 @@ input[type="text"]{
 	position: absolute;
 	right: 720px;
 	top: 39px;
-	width:100%;
+	width:300px;
 }
 
 .dropsDetails li{
@@ -129,6 +129,7 @@ input[type="text"]{
 
 #dropsDetailsParts{
 	right: 370px;
+	width:220px;
 }
 
 .searchBar{
