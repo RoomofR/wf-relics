@@ -102,6 +102,7 @@ function searchRelic(search){
 function toggleFocus(element,focus){
 	(element.getElementsByTagName('input')[0].value=='') ? focus=false : null;
 	document.getElementById({"searchRelics":"relics","searchParts":"parts"}[(typeof element != 'string')?element.id:element]).style.display = focus ? "block" : "none";
+}
 
 function toggleSetting(element){
 	eval(element.id+"=!"+element.id);
@@ -120,7 +121,7 @@ function toggleSetting(element){
 }
 
 function addRelicToList(relic){
-	document.getElementById("relicHistory").innerHTML += `<li><h>${relic}</h1></li>`
+	document.getElementById("relicHistory").innerHTML += `<li><h>${relic}</h1></li>`;
 }
 
 function expandRelicData(element,state){element.childNodes[2].style.display=(state) ? "block" : "none";}
@@ -185,5 +186,5 @@ function sortRelics(){
 	objects = sortedObjects,objectKeys = Object.keys(objects).sort();
 	relics = data.relics,relicKeys = Object.keys(data.relics).sort();
 	var t1 = performance.now();
-	console.log("Sort of relics took " + (t1 - t0) + " milliseconds.")
+	console.log("Sort of relics took " + (t1 - t0) + " milliseconds.");
 }
