@@ -21,7 +21,6 @@ document.addEventListener('click', function(e) {
     };
     element = isInEventGroup(target);
     Array.from(document.getElementsByClassName("searchList")).forEach(e=> {e.style.display='none'});
-    Array.from(document.getElementsByClassName("history")).forEach(e=> {e.style.top='36px'});
     if(element)toggleFocus(element,true);
 }, false);
 
@@ -102,10 +101,7 @@ function searchRelic(search){
 
 function toggleFocus(element,focus){
 	(element.getElementsByTagName('input')[0].value=='') ? focus=false : null;
-	document.getElementById({"searchRelics":"relics","searchParts":"parts"}[(typeof element != 'string')?element.id:element]).style.display = focus ? "block" : "none";//"430px"
-	document.getElementById({"searchRelics":"relicHistory","searchParts":"partHistory"}[(typeof element != 'string')?element.id:element]).style.top = focus ?  
-		`${38+(document.getElementById({"searchRelics":"relics","searchParts":"parts"}[(typeof element != 'string')?element.id:element]).clientHeight)}px`: "36px";
-}
+	document.getElementById({"searchRelics":"relics","searchParts":"parts"}[(typeof element != 'string')?element.id:element]).style.display = focus ? "block" : "none";
 
 function toggleSetting(element){
 	eval(element.id+"=!"+element.id);
