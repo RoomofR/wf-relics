@@ -1,51 +1,82 @@
-var data,objects,relics,showParts=true,showVaultedParts=true,showVaultedRelics=true;
-initData(data=>{
-	this.data=data;
-	sortRelics();
-})
+function getRelicName(relic){return relic.tier+" "+relic.relicName;}
+String.prototype.matches = function(arr) {return new RegExp(arr.join("|").toLowerCase()).test(this.toLowerCase())}
+var xhr = new XMLHttpRequest(),objects,relics,relicKeys,objectKeys,showParts=true,showVaultedParts=true,showVaultedRelics=true,
+	partList = document.getElementById("parts"),relicList = document.getElementById("relics");
+xhr.onreadystatechange = _=>{
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200){
+    	data=JSON.parse(LZString.decompressFromUTF16(xhr.responseText));
+    	sortRelics();
+    }
+};
+xhr.open("GET", 'data.txt', true);
+xhr.send();
 
-var objectKeys,partList = document.getElementById("parts");
+document.addEventListener('click', function(e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+    var isInEventGroup = (element) => {
+    	if(element.parentElement.nodeName=="DIV" && element.parentElement.className.includes("searchBar"))return element.parentElement;
+    	else if(element.parentElement.nodeName=="HTML")return false;
+    	return isInEventGroup(element.parentElement);
+    };
+    element = isInEventGroup(target);
+    Array.from(document.getElementsByClassName("searchList")).forEach(e=> {e.style.display='none'});
+    Array.from(document.getElementsByClassName("history")).forEach(e=> {e.style.top='36px'});
+    if(element)toggleFocus(element,true);
+}, false);
+
 function searchPart(search){
-	console.log(search.value);
-	(search.value=="") ? partsFocus(false) : partsFocus(true);
-	var partsHtml="";
+	partList.innerHTML="";
 	var filtered = (function(pattern){
 		var filtered = [], i = objectKeys.length, re = new RegExp(pattern,'i');
 		for(i=0;i<objectKeys.length;i++) {
-
+			var partHtml="";
 			if(!showParts && !objectKeys[i].includes("Prime Blueprint"))continue;
 
 			if(!showVaultedParts && objects[objectKeys[i]].vaulted)continue;
 
 			if (re.test(objectKeys[i])) {
 				filtered.push(objectKeys[i]);
-				if(filtered.length<300){
+				if(filtered.length<15){
 					img = getImgPart(objectKeys[i]);
-					partsHtml+=`<li><img src="${img}"><span>${objectKeys[i].replace(re,str => {return `<bl>${str}</bl>`})} ${(objects[objectKeys[i]].vaulted)?"(V)":""}</span></li>`;
+					partHtml=`<li onmouseover="expandRelicData(this,true)" onmouseout="expandRelicData(this,false)"><img src="${img}"><span>${objectKeys[i].replace(re,str => {return `<bl>${str}</bl>`})} ${(objects[objectKeys[i]].vaulted)?"(V)":""}</span>`;
+
+					relicHtml="";
+					Object.keys(objects[objectKeys[i]].relics).sort((a,b) => {
+						rl={"Axi":3,"Neo":2,"Meso":1,"Lith":0},a=rl[a.slice(0, -3)],b=rl[b.slice(0, -3)];
+						if(a<b)return -1;
+						else if(a>b)return 1;
+						else return 0;
+					}).forEach(relic=>{
+						img = getImgPart(relic);
+						rel = objects[objectKeys[i]].relics[relic];
+						relicHtml+=`<li style="color:${{"Common":"#9c784e","Uncommon":"#b4b7d0","Rare":"#e6bd68"}[rel.rarity]}">${relic} ${rel.rarity} ${(rel.vaulted)?"(V)":""}<img src="${img}"></li>`;
+					});
+
+					partHtml+=`<ul style="display:none" class="dropsDetails">${relicHtml}</ul></li>`
+					partList.innerHTML+=partHtml;
 				}
 			}
 		}
 		return filtered;
 	})(search.value);
-	partsHtml+=`<li>Found ${filtered.length} Items</li>`
-	partList.innerHTML=partsHtml;
-	//document.getElementById("debug").innerHTML=filtered.join("|");
+	partList.innerHTML+=`<li>Found ${filtered.length} Items</li>`
+	toggleFocus(search.parentElement,search.value!="");
 }
 
-var relicKeys,relicList = document.getElementById("relics");
 function searchRelic(search){
-	console.log(search.value);
-	(search.value=="") ? relicsFocus(false) : relicsFocus(true);
-	var relicsHtml="";
+	relicList.innerHTML="";
+	
 	var filtered = (function(pattern){
 		var filtered = [], i = relicKeys.length, re = new RegExp(pattern,'i');
 		for(i=0;i<relicKeys.length;i++) {
+			var relicHtml="";
 			if(!showVaultedRelics && relics[relicKeys[i]].vaulted)continue;
 			if (re.test(relicKeys[i])) {
 				filtered.push(relicKeys[i]);
 				if(filtered.length<15){
 					img = getImgPart(relicKeys[i]);
-					relicsHtml+=`<li onmouseover="expandRelicData(this,true)" onmouseout="expandRelicData(this,false)"><img src="${img}"><span>${relicKeys[i].replace(re,str => {return `<bl>${str}</bl>`})} ${(relics[relicKeys[i]].vaulted)?"(V)":""}</span>`;
+					relicHtml+=`<li class="relics" onmouseover="expandRelicData(this,true)" onmouseout="expandRelicData(this,false)"><img src="${img}"><span>${relicKeys[i].replace(re,str => {return `<bl>${str}</bl>`})} ${(relics[relicKeys[i]].vaulted)?"(V)":""}</span>`;
 
 					rewardHtml="";
 					relics[relicKeys[i]].rewards.sort((a,b) => {
@@ -55,56 +86,48 @@ function searchRelic(search){
 						else return 0;
 					}).forEach(reward=>{
 						img = getImgPart(reward.itemName);
-						rewardHtml+=`<li style="color:${{"Common":"#9c784e","Uncommon":"#b4b7d0","Rare":"#e6bd68"}[reward.rarity]}"><img src="${img}">${reward.itemName}</li>`;
+						rewardHtml+=`<li style="color:${{"Common":"#9c784e","Uncommon":"#b4b7d0","Rare":"#e6bd68"}[reward.rarity]}">${reward.itemName}<img src="${img}"></li>`;
 					});
-					relicsHtml+=`<ul style="display:none" class="relicDropsDetails">${rewardHtml}</ul>`;
+					relicHtml+=`<ul style="display:none" class="dropsDetails">${rewardHtml}</ul></li>`;
 
-					relicsHtml+="</li>";
+					relicList.innerHTML+=relicHtml;
 				}
 			}
 		}
 		return filtered;
 	})(search.value);
-	relicsHtml+=`<li>Found ${filtered.length} Relics</li>`
-	relicList.innerHTML=relicsHtml;
-	//document.getElementById("debug").innerHTML=filtered.join("|");
+	relicList.innerHTML+=`<li>Found ${filtered.length} Relics</li>`;
+	toggleFocus(search.parentElement,search.value!="");
+}
+
+function toggleFocus(element,focus){
+	(element.getElementsByTagName('input')[0].value=='') ? focus=false : null;
+	document.getElementById({"searchRelics":"relics","searchParts":"parts"}[(typeof element != 'string')?element.id:element]).style.display = focus ? "block" : "none";//"430px"
+	document.getElementById({"searchRelics":"relicHistory","searchParts":"partHistory"}[(typeof element != 'string')?element.id:element]).style.top = focus ?  
+		`${38+(document.getElementById({"searchRelics":"relics","searchParts":"parts"}[(typeof element != 'string')?element.id:element]).clientHeight)}px`: "36px";
+}
+
+function toggleSetting(element){
+	eval(element.id+"=!"+element.id);
+	switch(element.id){
+		case "showVaultedRelics":
+		case "showVaultedParts":
+			document.getElementById({"showVaultedRelics":"vaultRelic","showVaultedParts":"vaultPart"}[element.id]).src = "https://i.imgur.com/" + (eval(element.id) ? "RbCgY36" : "klU7igo") + ".png";
+			document.getElementById({"showVaultedRelics":"vaultRelic","showVaultedParts":"vaultPart"}[element.id]).title = (eval(element.id) ? "Hide Vaulted Items" : "Show Vaulted Items");
+			(element.id=="showVaultedRelics")?searchRelic(document.getElementById("searchRelicsBar")):searchPart(document.getElementById("searchPartsBar"));
+			break;
+		case "showParts":
+			document.getElementById("stock").src = "https://i.imgur.com/" + (showParts ? "vNDFczG" : "N54k436") + ".png";
+			document.getElementById("stock").title = (showParts ? "Hide Parts" : "Show Parts");
+			searchPart(document.getElementById("searchPartsBar"));
+	}
+}
+
+function addRelicToList(relic){
+	document.getElementById("relicHistory").innerHTML += `<li><h>${relic}</h1></li>`
 }
 
 function expandRelicData(element,state){element.childNodes[2].style.display=(state) ? "block" : "none";}
-
-function partsFocus(focus,obj){
-	document.getElementById('parts').style.display = focus ? "block" : "none";
-	if(obj && obj.value=='') document.getElementById('parts').style.display = "none";
-}
-
-function relicsFocus(focus,obj){
-	document.getElementById('relics').style.display = focus ? "block" : "none";
-	if(obj && obj.value=='') document.getElementById('relics').style.display="none"
-}
-
-function toggleShowParts(){
-	partsFocus(true)
-	showParts=!showParts;
-	document.getElementById("stock").src = "https://i.imgur.com/" + (showParts ? "vNDFczG" : "N54k436") + ".png";
-	document.getElementById("stock").title = (showParts ? "Hide Parts" : "Show Parts");
-	searchPart(document.getElementById("searchPartsBar"));
-}
-
-function toggleVaulted(bar){
-	if(bar=='relic'){
-		relicsFocus(true)
-		showVaultedRelics=!showVaultedRelics;
-		document.getElementById("vaultRelic").src = "https://i.imgur.com/" + (showVaultedRelics ? "RbCgY36" : "klU7igo") + ".png";
-		document.getElementById("vaultRelic").title = (showVaultedRelics ? "Hide Vaulted Relics" : "Show Vaulted Relics");
-		searchRelic(document.getElementById("searchRelicsBar"));
-	}else{
-		partsFocus(true)
-		showVaultedParts=!showVaultedParts;
-		document.getElementById("vaultPart").src = "https://i.imgur.com/" + (showVaultedParts ? "RbCgY36" : "klU7igo") + ".png";
-		document.getElementById("vaultPart").title = (showVaultedParts ? "Hide Vaulted Items" : "Show Vaulted Items");
-		searchPart(document.getElementById("searchPartsBar"));
-	}
-}
 
 function getImgPart(object){
 	var imgObject="",scale=30;
@@ -133,41 +156,14 @@ function getImgPart(object){
 
 	img = (imgObject) ? data.ref.img + imgObject + data.ref.scaleImg + scale : "";
 
-	if(!imgObject)console.log(object,part);
+	//if(!imgObject)console.error(object,part);//Missing Images
 	return img;
 }
 
 function sortRelics(){
-	var t0 = performance.now();
-	sortedObjects = {},sortedRelics = {};
-
-	data.relics.forEach(relic => {
-		isRelicVaulted = getRelicName(relic).matches(data.vaultedRelics);
-		//Fix Rarity Labels
-		if(!(getRelicName(relic) in sortedRelics))
-			sortedRelics[getRelicName(relic)]=Object.assign(relic,{"vaulted":isRelicVaulted,"fixed":false})
-
-		if(!("fixed" in sortedRelics[getRelicName(relic)] && sortedRelics[getRelicName(relic)].fixed)){
-			console.log(sortedRelics[getRelicName(relic)].fixed);
-			rarity = {};
-			sortedRelics[getRelicName(relic)].rewards.forEach((r,i) => {
-				if(rarity[r.chance]==undefined)rarity[r.chance]=[];
-				rarity[r.chance].push(i);
-			});
-			Object.keys(rarity).forEach(r=>{
-				rareState="Common"
-				if(rarity[r].length==2)rareState="Uncommon";
-				else if(rarity[r].length==1)rareState="Rare";
-
-				rarity[r].forEach(i => {
-					sortedRelics[getRelicName(relic)].rewards[i].rarity =rareState;
-				})
-			})
-			sortedRelics[getRelicName(relic)].fixed=true;
-		}
-
-		//Sort Relics in Objects/Parts
-		relic.rewards.forEach((item,i) => {
+	var t0 = performance.now(),sortedObjects = {};
+	Object.keys(data.relics).forEach(relic => {
+		data.relics[relic].rewards.forEach((item,i) => {
 			if(!sortedObjects.hasOwnProperty(item.itemName))sortedObjects[item.itemName]={};
 			if(!sortedObjects[item.itemName].hasOwnProperty("relics"))sortedObjects[item.itemName].relics={};
 
@@ -176,23 +172,22 @@ function sortRelics(){
 			if(part.toLowerCase() in data.frames)sortedObjects[item.itemName].vaulted=(data.frames[part.toLowerCase()].state=='v')
 			if(part.toLowerCase() in data.weapons)sortedObjects[item.itemName].vaulted=(data.weapons[part.toLowerCase()].state=='v')
 
-			if(!sortedObjects[item.itemName].relics.hasOwnProperty(getRelicName(relic))) sortedObjects[item.itemName].relics[getRelicName(relic)]={};
+			if(!sortedObjects[item.itemName].relics.hasOwnProperty(relic)) sortedObjects[item.itemName].relics[relic]={};
 			
-			sortedObjects[item.itemName].relics[getRelicName(relic)] = Object.assign(sortedObjects[item.itemName].relics[getRelicName(relic)],{
-				"tier":relic.tier,"name":relic.relicName,"rarity":sortedRelics[getRelicName(relic)].rewards[i].rarity,"vaulted":isRelicVaulted});
-			sortedObjects[item.itemName].relics[getRelicName(relic)][relic.state]=item.chance;
+			sortedObjects[item.itemName].relics[relic] = Object.assign(sortedObjects[item.itemName].relics[relic],{
+				"tier":data.relics[relic].tier,
+				"name":data.relics[relic].relicName,
+				"rarity":data.relics[relic].rewards[i].rarity,
+				"vaulted":relic.matches(data.vaultedRelics)
+			});
+			//TODO Add Chance Data in Server Side Data.json
+			sortedObjects[item.itemName].relics[relic][data.relics[relic].state]=item.chance;
 		});
 	});
 
-	console.log(sortedObjects);
-	console.log(sortedRelics);
-
-	//output(syntaxHighlight(data.relics));
-	//output(syntaxHighlight(sortedObjects));
-
-	objects = sortedObjects, relics = sortedRelics;
-	objectKeys = Object.keys(objects).sort(), relicKeys = Object.keys(relics).sort();
-
+	console.log(data.relics,sortedObjects);
+	objects = sortedObjects,objectKeys = Object.keys(objects).sort();
+	relics = data.relics,relicKeys = Object.keys(data.relics).sort();
 	var t1 = performance.now();
 	console.log("Sort of relics took " + (t1 - t0) + " milliseconds.")
 }

@@ -24,63 +24,69 @@ function syntaxHighlight(json) {
     });
 }
 
-function loadJSON(path, success, error)
-{
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function()
-    {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                if (success)
-                    success(JSON.parse(xhr.responseText));
-            } else {
-                if (error)
-                    error(xhr);
-            }
-        }
-    };
-    xhr.open("GET", path, true);
-    xhr.send();
-}
-
 function getRelicName(relic){return relic.tier+" "+relic.relicName;}
-
-function getCookie(){
-    return document.cookie;
-}
-
-function setCookie(){
-
-}
-
-initCookie();
-function initCookie(){
-    //if(document.cookie)
-}
 
 String.prototype.matches = function(arr) {return new RegExp(arr.join("|").toLowerCase()).test(this.toLowerCase())}
 
 function initData(callback){
-	loadJSON('data/relics.json',relics=>{
+	var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = _=>{
+        if (xhr.readyState === XMLHttpRequest.DONE)
+            if (xhr.status === 200)
+            	return callback(JSON.parse(LZString.decompressFromUTF16(xhr.responseText)));
+    };
+    xhr.open("GET", 'data.txt', true);
+    xhr.send();
+}
 
-			loadJSON('data/vaultedRelics.json',vaultedRelics => {
+function lzw_encode(s) {
+    var dict = {};
+    var data = (s + "").split("");
+    var out = [];
+    var currChar;
+    var phrase = data[0];
+    var code = 256;
+    for (var i=1; i<data.length; i++) {
+        currChar=data[i];
+        if (dict[phrase + currChar] != null) {
+            phrase += currChar;
+        }
+        else {
+            out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
+            dict[phrase + currChar] = code;
+            code++;
+            phrase=currChar;
+        }
+    }
+    out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
+    for (var i=0; i<out.length; i++) {
+        out[i] = String.fromCharCode(out[i]);
+    }
+    return out.join("");
+}
 
-				loadJSON('data/primes.json',primes => {
-					//Object.assign({},relics, vaultedRelics)
-					return callback({
-						"relics":relics.relics,
-						"vaultedRelics":vaultedRelics.vaultedRelics,
-						"ref":primes.ref,
-						"frames":primes.frames,
-						"weapons":primes.weapons
-					});
-
-				});
-
-			});
-
-		}
-
-	);
-
+// Decompress an LZW-encoded string
+function lzw_decode(s) {
+    var dict = {};
+    var data = (s + "").split("");
+    var currChar = data[0];
+    var oldPhrase = currChar;
+    var out = [currChar];
+    var code = 256;
+    var phrase;
+    for (var i=1; i<data.length; i++) {
+        var currCode = data[i].charCodeAt(0);
+        if (currCode < 256) {
+            phrase = data[i];
+        }
+        else {
+           phrase = dict[currCode] ? dict[currCode] : (oldPhrase + currChar);
+        }
+        out.push(phrase);
+        currChar = phrase.charAt(0);
+        dict[code] = oldPhrase + currChar;
+        code++;
+        oldPhrase = phrase;
+    }
+    return out.join("");
 }
