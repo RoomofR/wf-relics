@@ -3,8 +3,10 @@ const http = require('http'),
 	 fs = require('fs'),
 	 path = require('path'),
 	 lz = require('./js/lz-string.js');
-	 minify =  true;
 const port = process.argv[2] || 5959;
+
+// LZ String 24.1+3.5+8.4=36
+// LZ Small 25.8+8.9
 
 readFiles('data/',_=>{
 	console.log("Data File Aggregated!!!");
@@ -23,12 +25,6 @@ readFiles('data/',_=>{
 		'.css': 'text/css',
 		'.png': 'image/png',
 		'.jpg': 'image/jpeg',
-		'.wav': 'audio/wav',
-		'.mp3': 'audio/mpeg',
-		'.svg': 'image/svg+xml',
-		'.pdf': 'application/pdf',
-		'.doc': 'application/msword',
-		'.eot': 'appliaction/vnd.ms-fontobject',
 		'.ttf': 'aplication/font-sfnt'
 	  };
 	  fs.exists(pathname, function (exist) {
@@ -60,12 +56,10 @@ readFiles('data/',_=>{
 	console.log(`Server listening on port ${port}`);
 });
 
-/**/
+String.prototype.matches = function(arr) {return new RegExp(arr.join("|").toLowerCase()).test(this.toLowerCase())}
 
 function readFiles(dirname, callback) {
 	var data={},rawData;
-
-
 	fs.readFile(dirname + 'primes.json', 'utf-8', (err, primes) => {rawData+=primes;
 			json = JSON.parse(primes);
 			data=Object.assign(data,{
@@ -81,13 +75,31 @@ function readFiles(dirname, callback) {
 			fs.readFile(dirname + 'relics.json', 'utf-8', (err, relics) => {rawData+=relics;
 				json = JSON.parse(relics);
 				data=Object.assign(data,{'relics':sortRelics(Object.assign(data,json))});
-				fs.writeFile('data.txt', lz.compressToUTF16(JSON.stringify(data,null,0)), 'utf8', _=>{return callback(data)});
+
+				Object.keys(data.relics).forEach(relic => {
+					delete data.relics[relic].fixed;
+					delete data.relics[relic].relicName;
+					delete data.relics[relic].tier;
+					delete data.relics[relic]._id;
+				})
+
+				fs.writeFile('raw.json', JSON.stringify(data,null,'\t'), 'utf8',_=>{});
+				fs.writeFile('data.json', lzw_encode(JSON.stringify(data,null,0)), _=>{return callback(data)});
+				console.log(` Raw Data:         ${rawData.length}\n`,
+					`Uncompressed:     ${JSON.stringify(data,null,0).length}\n`,
+					`Compressed UTF16: ${lz.compressToUTF16(JSON.stringify(data,null,0)).length} (${lz.compressToUTF16(JSON.stringify(data,null,0)).length+3437})\n`,
+					`Compressed LZW:   ${lzw_encode(JSON.stringify(data,null,0)).length} (${lzw_encode(JSON.stringify(data,null,0)).length+529})\n`)
+
+				/*fs.writeFile('data.json', lzw_encode(JSON.stringify(data,null,0)), 'utf8', _=>{return callback(data)});
+				console.log(` Uncompressed:     ${rawData.length}\n`,
+					`Compressed UTF16: ${lzw_encode(JSON.stringify(data,null,0)).length}\n`)*/
 			});
 		});
 	});
 }
 
 function sortRelics(data){
+	const getRelicName = (relic) => {return relic.tier+" "+relic.relicName};
 	sortedRelics = {};
 	data.relics.forEach(relic => {
 		isRelicVaulted = getRelicName(relic).matches(data.vaultedRelics);
@@ -103,9 +115,9 @@ function sortRelics(data){
 				rarity[r.chance].push(i);
 			});
 			Object.keys(rarity).forEach(r=>{
-				rareState="Common"
-				if(rarity[r].length==2)rareState="Uncommon";
-				else if(rarity[r].length==1)rareState="Rare";
+				rareState="c"
+				if(rarity[r].length==2)rareState="u";
+				else if(rarity[r].length==1)rareState="r";
 
 				rarity[r].forEach(i => {
 					sortedRelics[getRelicName(relic)].rewards[i].rarity =rareState;
@@ -118,31 +130,7 @@ function sortRelics(data){
 	return sortedRelics;
 }
 
-String.prototype.matches = function(arr) {return new RegExp(arr.join("|").toLowerCase()).test(this.toLowerCase())}
-function getRelicName(relic){return relic.tier+" "+relic.relicName;}
-
-function lzw_encode(s) {
-    var dict = {};
-    var data = (s + "").split("");
-    var out = [];
-    var currChar;
-    var phrase = data[0];
-    var code = 256;
-    for (var i=1; i<data.length; i++) {
-        currChar=data[i];
-        if (dict[phrase + currChar] != null) {
-            phrase += currChar;
-        }
-        else {
-            out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
-            dict[phrase + currChar] = code;
-            code++;
-            phrase=currChar;
-        }
-    }
-    out.push(phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0));
-    for (var i=0; i<out.length; i++) {
-        out[i] = String.fromCharCode(out[i]);
-    }
-    return out.join("");
-}
+//data=JSON.parse(LZString.decompressFromUTF16(xhr.responseText));
+//data=JSON.parse(lzw_decode(xhr.responseText));
+function lzw_encode(r){for(var n,t={},e=(r+"").split(""),o=[],h=e[0],l=256,_=1;_<e.length;_++)null!=t["_"+h+(n=e[_])]?h+=n:(o.push(h.length>1?t["_"+h]:h.charCodeAt(0)),t["_"+h+n]=l,l++,h=n);o.push(h.length>1?t["_"+h]:h.charCodeAt(0));for(_=0;_<o.length;_++)o[_]=String.fromCharCode(o[_]);return o.join("")}
+function lzw_decode(r){for(var n,t={},e=(r+"").split(""),o=e[0],h=o,l=[o],_=256,a=1;a<e.length;a++){var c=e[a].charCodeAt(0);n=c<256?e[a]:t["_"+c]?t["_"+c]:h+o,l.push(n),o=n.charAt(0),t["_"+_]=h+o,_++,h=n}return l.join("")}

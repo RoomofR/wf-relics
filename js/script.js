@@ -4,11 +4,11 @@ var xhr = new XMLHttpRequest(),objects,relics,relicKeys,objectKeys,showParts=tru
 	partList = document.getElementById("parts"),relicList = document.getElementById("relics");
 xhr.onreadystatechange = _=>{
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200){
-    	data=JSON.parse(LZString.decompressFromUTF16(xhr.responseText));
+    	data=JSON.parse(uncompress(xhr.responseText));
     	sortRelics();
     }
 };
-xhr.open("GET", 'data.txt', true);
+xhr.open("GET", 'data.json', true);
 xhr.send();
 
 document.addEventListener('click', function(e) {
@@ -49,7 +49,7 @@ function searchPart(search){
 					}).forEach(relic=>{
 						img = getImgPart(relic);
 						rel = objects[objectKeys[i]].relics[relic];
-						relicHtml+=`<li style="color:${{"Common":"#9c784e","Uncommon":"#b4b7d0","Rare":"#e6bd68"}[rel.rarity]}">${relic} ${rel.rarity} ${(rel.vaulted)?"(V)":""}<img src="${img}"></li>`;
+						relicHtml+=`<li style="color:${{"c":"#9c784e","u":"#b4b7d0","r":"#e6bd68"}[rel.rarity]}">${relic} ${{"c":"Common","u":"Uncommon","r":"Rare"}[rel.rarity]} ${(rel.vaulted)?"(V)":""}<img src="${img}"></li>`;
 					});
 
 					partHtml+=`<ul style="display:none" id="dropsDetailsParts" class="dropsDetails">${relicHtml}</ul></li>`
@@ -79,13 +79,13 @@ function searchRelic(search){
 
 					rewardHtml="";
 					relics[relicKeys[i]].rewards.sort((a,b) => {
-						ra={"Rare":2,"Uncommon":1,"Common":0},a=ra[a.rarity],b=ra[b.rarity];
+						ra={"r":2,"u":1,"c":0},a=ra[a.rarity],b=ra[b.rarity];
 						if(a<b)return -1;
 						else if(a>b)return 1;
 						else return 0;
 					}).forEach(reward=>{
 						img = getImgPart(reward.itemName);
-						rewardHtml+=`<li style="color:${{"Common":"#9c784e","Uncommon":"#b4b7d0","Rare":"#e6bd68"}[reward.rarity]}">${reward.itemName}<img src="${img}"></li>`;
+						rewardHtml+=`<li style="color:${{"c":"#9c784e","u":"#b4b7d0","r":"#e6bd68"}[reward.rarity]}">${reward.itemName}<img src="${img}"></li>`;
 					});
 					relicHtml+=`<ul style="display:none" class="dropsDetails">${rewardHtml}</ul></li>`;
 
@@ -188,3 +188,6 @@ function sortRelics(){
 	var t1 = performance.now();
 	console.log("Sort of relics took " + (t1 - t0) + " milliseconds.");
 }
+
+function compress(r){for(var n,t={},e=(r+"").split(""),o=[],h=e[0],l=256,_=1;_<e.length;_++)null!=t["_"+h+(n=e[_])]?h+=n:(o.push(h.length>1?t["_"+h]:h.charCodeAt(0)),t["_"+h+n]=l,l++,h=n);o.push(h.length>1?t["_"+h]:h.charCodeAt(0));for(_=0;_<o.length;_++)o[_]=String.fromCharCode(o[_]);return o.join("")}
+function uncompress(r){for(var n,t={},e=(r+"").split(""),o=e[0],h=o,l=[o],_=256,a=1;a<e.length;a++){var c=e[a].charCodeAt(0);n=c<256?e[a]:t["_"+c]?t["_"+c]:h+o,l.push(n),o=n.charAt(0),t["_"+_]=h+o,_++,h=n}return l.join("")}

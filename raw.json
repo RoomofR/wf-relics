@@ -1,0 +1,4573 @@
+{
+	"ref": {
+		"wiki": "http://warframe.wikia.com/wiki/",
+		"img": "https://vignette.wikia.nocookie.net/warframe/images/",
+		"scaleImg": ".png/revision/latest/scale-to-width-down/",
+		"relics": {
+			"lith": "a/ae/VoidProjectionsIronD",
+			"meso": "1/12/VoidProjectionsBronzeD",
+			"neo": "c/c5/VoidProjectionsSilverD",
+			"axi": "0/0e/VoidProjectionsGoldD"
+		},
+		"icons": {
+			"forma": "b/b1/Forma2",
+			"neuroptics": "c/c1/PrimeHelmet",
+			"chassis": "e/ef/PrimeChassis",
+			"systems": "d/d2/PrimeSystems",
+			"barrel": "2/2f/GenericGunPrimeBarrel",
+			"receiver": "0/03/GenericGunPrimeReceiver",
+			"stock": "6/66/GenericGunPrimeStock",
+			"blade": "f/f8/GenericWeaponPrimeBlade",
+			"latch": "f/ff/GenericComponentPrimeLatch",
+			"hilt": "e/ea/GenericWeaponPrimeHilt",
+			"guard": "5/5c/GenericWeaponPrimeGuard",
+			"link": "b/b3/GenericComponentPrimePlug",
+			"harness": "c/cd/GenericArchwingHarness",
+			"wings": "d/de/GenericArchwingWings",
+			"arcSystems": "b/bf/GenericArchwingSystems",
+			"cerebrum": "3/37/Helmet",
+			"carapace": "d/dd/Chassis",
+			"compSystems": "e/e0/Systems"
+		},
+		"partsRef": {
+			"limb": "blade",
+			"blades": "blade",
+			"grip": "latch",
+			"string": "stock",
+			"gauntlet": "hilt",
+			"boot": "guard",
+			"head": "blade",
+			"disc": "blade",
+			"handle": "hilt",
+			"pouch": "latch",
+			"ornament": "link",
+			"stars": "blade",
+			"band": "latch",
+			"buckle": "link"
+		}
+	},
+	"frames": {
+		"ash": {
+			"id": "a",
+			"name": "Ash Prime",
+			"img": "8/8e/AshPrimeIcon",
+			"mr": 0,
+			"state": "v"
+		},
+		"banshee": {
+			"id": "b",
+			"name": "Banshee Prime",
+			"img": "8/8e/BansheePrimeIcon",
+			"mr": 8,
+			"state": "u"
+		},
+		"ember": {
+			"id": "e",
+			"name": "Ember Prime",
+			"img": "4/4f/PrimeEmber",
+			"mr": 0,
+			"state": "v"
+		},
+		"frost": {
+			"id": "f",
+			"name": "Frost Prime",
+			"img": "f/f7/PrimeFrost",
+			"mr": 0,
+			"state": "v"
+		},
+		"hydroid": {
+			"id": "h",
+			"name": "Hydroid Prime",
+			"img": "6/6f/HydroidPrimeBust",
+			"mr": 5,
+			"state": "u"
+		},
+		"loki": {
+			"id": "l",
+			"name": "Loki Prime",
+			"img": "f/f6/PrimeLoki",
+			"mr": 0,
+			"state": "v"
+		},
+		"mag": {
+			"id": "m",
+			"name": "Mag Prime",
+			"img": "c/cc/PrimeMag",
+			"mr": 0,
+			"state": "v"
+		},
+		"mirage": {
+			"id": "i",
+			"name": "Mirage Prime",
+			"img": "f/ff/MiragePrime",
+			"mr": 8,
+			"state": "u"
+		},
+		"nekros": {
+			"id": "k",
+			"name": "Nekros Prime",
+			"img": "5/5d/NekrosPrimeProfilePicture",
+			"mr": 0,
+			"state": "u"
+		},
+		"nova": {
+			"id": "n",
+			"name": "Nova Prime",
+			"img": "5/51/PrimeNova",
+			"mr": 0,
+			"state": "v"
+		},
+		"nyx": {
+			"id": "x",
+			"name": "Nyx Prime",
+			"img": "8/80/PrimeNyx",
+			"mr": 0,
+			"state": "v"
+		},
+		"oberon": {
+			"id": "o",
+			"name": "Oberon Prime",
+			"img": "d/da/OberonPrime",
+			"mr": 8,
+			"state": "u"
+		},
+		"rhino": {
+			"id": "r",
+			"name": "Rhino Prime",
+			"img": "5/5e/PrimeRhino",
+			"mr": 0,
+			"state": "v"
+		},
+		"saryn": {
+			"id": "s",
+			"name": "Saryn Prime",
+			"img": "5/5b/SarynPrimeIcon",
+			"mr": 0,
+			"state": "v"
+		},
+		"trinity": {
+			"id": "t",
+			"name": "Trinity Prime",
+			"img": "1/11/TrinityPrimeIcon",
+			"mr": 0,
+			"state": "v"
+		},
+		"valkyr": {
+			"id": "y",
+			"name": "Valkyr Prime",
+			"img": "1/14/ValkyrPrimeProfilePicture",
+			"mr": 0,
+			"state": "u"
+		},
+		"vauban": {
+			"id": "u",
+			"name": "Vauban Prime",
+			"img": "a/a6/Booben",
+			"mr": 0,
+			"state": "n"
+		},
+		"volt": {
+			"id": "v",
+			"name": "Volt Prime",
+			"img": "f/f4/VoltPrimeIcon",
+			"mr": 0,
+			"state": "v"
+		}
+	},
+	"weapons": {
+		"boar": {
+			"id": "pb",
+			"name": "Boar Prime",
+			"img": "e/e7/FixedPrimeBoar",
+			"mr": 2,
+			"state": "v"
+		},
+		"boltor": {
+			"id": "bo",
+			"name": "Boltor Prime",
+			"img": "5/59/DEPrimeBoltor",
+			"mr": 2,
+			"state": "v"
+		},
+		"braton": {
+			"id": "br",
+			"name": "Braton Prime",
+			"img": "0/02/PrimeBraton",
+			"mr": 0,
+			"state": "u"
+		},
+		"burston": {
+			"id": "bu",
+			"name": "Burston Prime",
+			"img": "8/83/PrimeBurston",
+			"mr": 0,
+			"state": "u"
+		},
+		"cernos": {
+			"id": "pc",
+			"name": "Cernos Prime",
+			"img": "0/06/CernosPrime",
+			"mr": 8,
+			"state": "u"
+		},
+		"latron": {
+			"id": "pl",
+			"name": "Latron Prime",
+			"img": "c/c1/DELatronPrime",
+			"mr": 0,
+			"state": "v"
+		},
+		"paris": {
+			"id": "pp",
+			"name": "Paris Prime",
+			"img": "7/75/PrimeBowM",
+			"mr": 4,
+			"state": "u"
+		},
+		"soma": {
+			"id": "ps",
+			"name": "Soma Prime",
+			"img": "a/a6/PrimeSoma",
+			"mr": 6,
+			"state": "v"
+		},
+		"sybaris": {
+			"id": "py",
+			"name": "Sybaris Prime",
+			"img": "8/8b/Sybaris_Prime",
+			"mr": 12,
+			"state": "u"
+		},
+		"tigris": {
+			"id": "pt",
+			"name": "Tigris Prime",
+			"img": "a/aa/PrimeTigris342",
+			"mr": 13,
+			"state": "u"
+		},
+		"vectis": {
+			"id": "pv",
+			"name": "Vectis Prime",
+			"img": "6/68/VectisPrime",
+			"mr": 3,
+			"state": "v"
+		},
+		"akbolto": {
+			"id": "sa",
+			"name": "Akbolto Prime",
+			"img": "8/88/MirageAkboltoPrime",
+			"mr": 13,
+			"state": "u"
+		},
+		"akbronco": {
+			"id": "sr",
+			"name": "Akbronco Prime",
+			"img": "a/af/DEPrimeDualBroncos",
+			"mr": 11,
+			"state": "u"
+		},
+		"aklex": {
+			"id": "sx",
+			"name": "Aklex Prime",
+			"img": "6/61/Aklex_Prime",
+			"mr": 8,
+			"state": "v"
+		},
+		"akstiletto": {
+			"id": "st",
+			"name": "Akstiletto Prime",
+			"img": "4/43/PrimeAkstiletto",
+			"mr": 5,
+			"state": "n"
+		},
+		"ballistica": {
+			"id": "sc",
+			"name": "Ballistica Prime",
+			"img": "d/db/PrimeBallistica",
+			"mr": 7,
+			"state": "u"
+		},
+		"bronco": {
+			"id": "sb",
+			"name": "Bronco Prime",
+			"img": "c/c8/PrimeBronco",
+			"mr": 3,
+			"state": "u"
+		},
+		"euphona": {
+			"id": "se",
+			"name": "Euphona Prime",
+			"img": "2/23/EuphoraPrime",
+			"mr": 14,
+			"state": "u"
+		},
+		"hikou": {
+			"id": "sh",
+			"name": "Hikou Prime",
+			"img": "b/b4/PrimeHikou",
+			"mr": 2,
+			"state": "v"
+		},
+		"lex": {
+			"id": "sl",
+			"name": "Lex Prime",
+			"img": "9/9e/PrimeLex",
+			"mr": 5,
+			"state": "u"
+		},
+		"sicarus": {
+			"id": "ss",
+			"name": "Sicarus Prime",
+			"img": "d/d7/DESicarus_Prime",
+			"mr": 7,
+			"state": "v"
+		},
+		"spira": {
+			"id": "sp",
+			"name": "Spira Prime",
+			"img": "0/02/PrimeLiDagger",
+			"mr": 3,
+			"state": "v"
+		},
+		"vasto": {
+			"id": "sv",
+			"name": "Vasto Prime",
+			"img": "f/f6/PrimeVasto",
+			"mr": 3,
+			"state": "v"
+		},
+		"ankyros": {
+			"id": "ma",
+			"name": "Ankyros Prime",
+			"img": "d/d4/DEPrimeAnkyros",
+			"mr": 0,
+			"state": "v"
+		},
+		"bo": {
+			"id": "mb",
+			"name": "Bo Prime",
+			"img": "1/1b/PrimeBo",
+			"mr": 5,
+			"state": "v"
+		},
+		"dakra": {
+			"id": "md",
+			"name": "Dakra Prime",
+			"img": "8/86/SwordPrime",
+			"mr": 6,
+			"state": "v"
+		},
+		"kamas": {
+			"id": "mm",
+			"name": "Dual Kamas Prime",
+			"img": "5/5b/DualKamasPrime",
+			"mr": 6,
+			"state": "v"
+		},
+		"fang": {
+			"id": "mf",
+			"name": "Fang Prime",
+			"img": "2/2b/PrimeFang",
+			"mr": 0,
+			"state": "u"
+		},
+		"fragor": {
+			"id": "mh",
+			"name": "Fragor Prime",
+			"img": "d/d7/PrimeFragor",
+			"mr": 7,
+			"state": "n"
+		},
+		"galatine": {
+			"id": "mg",
+			"name": "Galatine Prime",
+			"img": "0/0c/PrimeGalatine342",
+			"mr": 13,
+			"state": "u"
+		},
+		"glaive": {
+			"id": "mi",
+			"name": "Glaive Prime",
+			"img": "7/73/PrimeGlaive",
+			"mr": 10,
+			"state": "v"
+		},
+		"kogake": {
+			"id": "mk",
+			"name": "Kogake Prime",
+			"img": "4/4c/MirageKogakePrime",
+			"mr": 10,
+			"state": "u"
+		},
+		"skyla": {
+			"id": "ms",
+			"name": "Nami Skyla Prime",
+			"img": "6/68/PrimeNamiSkyla",
+			"mr": 11,
+			"state": "u"
+		},
+		"nikana": {
+			"id": "mn",
+			"name": "Nikana Prime",
+			"img": "3/31/PrimeNikana",
+			"mr": 0,
+			"state": "v"
+		},
+		"orthos": {
+			"id": "mo",
+			"name": "Orthos Prime",
+			"img": "2/2a/PrimePolearm",
+			"mr": 2,
+			"state": "u"
+		},
+		"reaper": {
+			"id": "mr",
+			"name": "Reaper Prime",
+			"img": "6/67/ReaperPrime",
+			"mr": 2,
+			"state": "v"
+		},
+		"scindo": {
+			"id": "mc",
+			"name": "Scindo Prime",
+			"img": "3/38/PrimeScindo",
+			"mr": 4,
+			"state": "v"
+		},
+		"aegis": {
+			"id": "m&",
+			"name": "Silva & Aegis Prime",
+			"img": "f/f7/SilvaAegisPrime",
+			"mr": 12,
+			"state": "u"
+		},
+		"venka": {
+			"id": "mv",
+			"name": "Venka Prime",
+			"img": "1/12/VenkaPrime",
+			"mr": 8,
+			"state": "u"
+		}
+	},
+	"vaultedRelics": [
+		"Lith A1",
+		"Lith B1",
+		"Lith C1",
+		"Lith F1",
+		"Lith F2",
+		"Lith G1",
+		"Lith H1",
+		"Lith K1",
+		"Lith M1",
+		"Lith N1",
+		"Lith N2",
+		"Lith S1",
+		"Lith S2",
+		"Lith S3",
+		"Lith S4",
+		"Lith S5",
+		"Lith S6",
+		"Lith V1",
+		"Lith V4",
+		"Meso B1",
+		"Meso C1",
+		"Meso C2",
+		"Meso C3",
+		"Meso D1",
+		"Meso F1",
+		"Meso F2",
+		"Meso M1",
+		"Meso N1",
+		"Meso N2",
+		"Meso N3",
+		"Meso N4",
+		"Meso S1",
+		"Meso S2",
+		"Meso S3",
+		"Meso S4",
+		"Meso S5",
+		"Meso S6",
+		"Meso V1",
+		"Meso V2",
+		"Meso V3",
+		"Meso V4",
+		"Meso V5",
+		"Neo A1",
+		"Neo B1",
+		"Neo B3",
+		"Neo D1",
+		"Neo N1",
+		"Neo N2",
+		"Neo N3",
+		"Neo N4",
+		"Neo N5",
+		"Neo N6",
+		"Neo N7",
+		"Neo S1",
+		"Neo S2",
+		"Neo S3",
+		"Neo S5",
+		"Neo S6",
+		"Neo S8",
+		"Neo T1",
+		"Neo V1",
+		"Neo V3",
+		"Neo V4",
+		"Axi A1",
+		"Axi A2",
+		"Axi B1",
+		"Axi C1",
+		"Axi C2",
+		"Axi E1",
+		"Axi G1",
+		"Axi H1",
+		"Axi H2",
+		"Axi K1",
+		"Axi N1",
+		"Axi N2",
+		"Axi N3",
+		"Axi N4",
+		"Axi R1",
+		"Axi S1",
+		"Axi T1",
+		"Axi V1",
+		"Axi V2",
+		"Axi V3",
+		"Axi V4",
+		"Axi V5"
+	],
+	"relics": {
+		"Axi A1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Akstiletto Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fragor Prime Head",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Dual Kamas Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nikana Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				}
+			],
+			"vaulted": true
+		},
+		"Axi A2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Aklex Prime Link",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Aklex Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Lex Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Lex Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi A3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Akbolto Prime Receiver",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Hydroid Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Cernos Prime String",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Helios Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Kogake Prime Boot",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Axi B1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Banshee Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Cernos Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Kavasa Prime Buckle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Euphona Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ash Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi B2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Banshee Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Orthos Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Head",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Sybaris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Axi C1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Cernos Prime Lower Limb",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Orthos Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vectis Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi C2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Cernos Prime Lower Limb",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Silva & Aegis Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Trinity Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi E1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Ember Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Glaive Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Latron Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Sicarus Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Frost Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi E2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Euphona Prime Receiver",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Bronco Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Axi G1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Galatine Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Kavasa Prime Kubrow Collar Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nekros Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Saryn Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi H1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Helios Prime Cerebrum",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akstiletto Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fragor Prime Head",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vectis Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi H2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Helios Prime Cerebrum",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Trinity Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Akstiletto Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Oberon Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi K1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Kavasa Prime Buckle",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Odonata Prime Harness Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Hikou Prime Pouch",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akstiletto Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi N1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Akstiletto Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Odonata Prime Wings Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ash Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				}
+			],
+			"vaulted": true
+		},
+		"Axi N2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Carrier Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nikana Prime Hilt",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Ash Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi N3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nekros Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Volt Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Bronco Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Dual Kamas Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi N4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nikana Prime Hilt",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Hydroid Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Cernos Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nekros Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi N5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nami Skyla Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Nekros Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Helios Prime Systems",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Euphona Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Oberon Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Axi O1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Oberon Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akstiletto Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Galatine Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Euphona Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Axi R1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Rhino Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Dakra Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Ankyros Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Boltor Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Mag Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Boar Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi S1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akbronco Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Scindo Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Trinity Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Axi T1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Tigris Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akstiletto Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Burston Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vectis Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Odonata Prime Harness Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Saryn Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi V1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Odonata Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vauban Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Carrier Prime Systems",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Dual Kamas Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Volt Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Axi V2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vectis Prime Stock",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Hikou Prime Pouch",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Mag Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Boar Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Axi V3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vectis Prime Stock",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Orthos Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vasto Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Trinity Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi V4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vectis Prime Stock",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Cernos Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Trinity Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Odonata Prime Harness Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi V5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Valkyr Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Braton Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Tigris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Venka Prime Blades",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Dual Kamas Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Axi V6": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Valkyr Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Galatine Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ballistica Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Axi V7": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Venka Prime Gauntlet",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Kogake Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Silva & Aegis Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nami Skyla Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Valkyr Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith A1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Saryn Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vectis Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akstiletto Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vasto Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith A2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Akstiletto Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akbronco Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Cernos Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Valkyr Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith B1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Boar Prime Stock",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Rhino Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Boltor Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Mag Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ankyros Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith B2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Ballistica Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Orthos Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Tigris Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith C1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Carrier Prime Cerebrum",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Kavasa Prime Band",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nova Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nova Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith C2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Cernos Prime Lower Limb",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Nami Skyla Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Akbolto Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Venka Prime Blades",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith F1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Scindo Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Odonata Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith F2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Odonata Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Hikou Prime Stars",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vauban Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Lith G1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Glaive Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Ember Prime Systems Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Latron Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Frost Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Reaper Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith H1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Helios Prime Cerebrum",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akstiletto Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nami Skyla Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Saryn Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith K1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Kavasa Prime Buckle",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Tigris Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fang Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Odonata Prime Harness Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith M1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Mag Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Lex Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Soma Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Dakra Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Boar Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith N1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nova Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akbronco Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nekros Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith N2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nekros Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Helios Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Kavasa Prime Band",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Spira Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Carrier Prime Systems",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith N3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nekros Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Braton Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Sybaris Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Valkyr Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith S1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Paris Prime Grip",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Spira Prime Pouch",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Hikou Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith S2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Soma Prime Stock",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Carrier Prime Systems",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Akbronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nyx Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Kavasa Prime Band",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Lith S3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Spira Prime Pouch",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Ash Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Soma Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Carrier Prime Systems",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akbronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith S4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Saryn Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Trinity Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Kavasa Prime Kubrow Collar Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Lex Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith S5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Spira Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akbronco Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Galatine Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Carrier Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith S6": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Spira Prime Pouch",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Kavasa Prime Band",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Valkyr Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Dual Kamas Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Lith S7": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Sybaris Prime Barrel",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Paris Prime Grip",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Akbolto Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Mirage Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith T1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Tigris Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Ballistica Prime Upper Limb",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Valkyr Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akbronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith V1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Fragor Prime Handle",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Volt Prime Systems Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Lith V2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vauban Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fang Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith V3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Valkyr Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Tigris Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Helios Prime Systems",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Cernos Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Lith V4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vauban Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Tigris Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Helios Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Spira Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nekros Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Venka Prime Blades",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso B1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Boar Prime Stock",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Dakra Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Mag Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Orthos Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Orthos Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso C1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Carrier Prime Cerebrum",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Nova Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Scindo Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Saryn Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ash Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Meso C2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Carrier Prime Cerebrum",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Valkyr Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Odonata Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Cernos Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso C3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Cernos Prime Lower Limb",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Saryn Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Helios Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Lex Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nami Skyla Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso D1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Orthos Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Orthos Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Dual Kamas Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Lex Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso F1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Fragor Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Nekros Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Dual Kamas Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Bronco Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Saryn Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso F2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Frost Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Reaper Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Latron Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ember Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Sicarus Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso G1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Galatine Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Silva & Aegis Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Ballistica Prime String",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Venka Prime Blades",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Meso H1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Helios Prime Cerebrum",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Oberon Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Mirage Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Hydroid Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Meso K1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Kogake Prime Gauntlet",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akstiletto Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Tigris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nekros Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Orthos Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Cernos Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Meso M1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Mag Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Boar Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Rhino Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Dakra Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Boltor Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ankyros Prime Gauntlet",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso N1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nyx Prime Neuroptics Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Dual Kamas Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Meso N2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Ash Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vauban Prime Neuroptics Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Hikou Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso N3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nekros Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Euphona Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Carrier Prime Cerebrum",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Burston Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso N4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nikana Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Oberon Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Saryn Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Orthos Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso N5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nekros Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Hydroid Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Tigris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Braton Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Meso O1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Oberon Prime Neuroptics Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Akstiletto Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Cernos Prime String",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akbronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Meso S1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Soma Prime Stock",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Odonata Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Nova Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Tigris Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso S2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Saryn Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Paris Prime Grip",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso S3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Spira Prime Pouch",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Ash Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Valkyr Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nekros Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akbronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso S4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Saryn Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fang Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Banshee Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso S5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Sybaris Prime Barrel",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Saryn Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Burston Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso S6": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Spira Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Cernos Prime String",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Tigris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Helios Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Valkyr Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso V1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Burston Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Spira Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Carrier Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vectis Prime Receiver",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Meso V2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vasto Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ash Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nikana Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Volt Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Meso V3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Valkyr Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Kavasa Prime Band",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Volt Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Carrier Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Spira Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso V4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vauban Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Valkyr Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Ash Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Carrier Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Meso V5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Venka Prime Gauntlet",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Euphona Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Silva & Aegis Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Cernos Prime Grip",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Spira Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo A1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Akstiletto Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Cernos Prime String",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vectis Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Carrier Prime Systems",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo B1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Banshee Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Vectis Prime Stock",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Burston Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Trinity Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo B2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Banshee Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Venka Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Tigris Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Neo B3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Boltor Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Mag Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Dakra Prime Blade",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Boar Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Rhino Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo D1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Dakra Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Mag Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Trinity Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vasto Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Boar Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Neo H1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Hydroid Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Banshee Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Tigris Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Orthos Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fragor Prime Head",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Neo M1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Mirage Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Helios Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Euphona Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Akbolto Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Neo N1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nyx Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Soma Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Kavasa Prime Kubrow Collar Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Hikou Prime Stars",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vectis Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo N2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Lex Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Vauban Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Fang Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vasto Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nova Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Neo N3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nekros Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Ash Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Odonata Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo N4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nikana Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Venka Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ash Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo N5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nikana Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Ash Prime Systems Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Akstiletto Prime Link",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Saryn Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Helios Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo N6": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nikana Prime Hilt",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Sybaris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Bronco Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Cernos Prime Upper Limb",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo N7": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nekros Prime Systems Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Banshee Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Valkyr Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Trinity Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Euphona Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Venka Prime Blades",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo S1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Saryn Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Trinity Prime Chassis Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Carrier Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Lex Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Soma Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo S2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nyx Prime Systems Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Saryn Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Burston Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Lower Limb",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nova Prime Systems Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime Upper Limb",
+					"rarity": "u",
+					"chance": 11
+				}
+			],
+			"vaulted": true
+		},
+		"Neo S3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Soma Prime Barrel",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Vasto Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Spira Prime Blade",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Carrier Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo S5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Sicarus Prime Receiver",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Glaive Prime Disc",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Frost Prime Systems Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Latron Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Ember Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Reaper Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo S6": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Silva & Aegis Prime Guard",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Tigris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Kavasa Prime Buckle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Burston Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Trinity Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo S7": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Silva & Aegis Prime Guard",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Sybaris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Ballistica Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Banshee Prime Neuroptics Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Fang Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Helios Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Neo S8": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Spira Prime Pouch",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Nikana Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Hydroid Prime Chassis Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo T1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Tigris Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Banshee Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Dual Kamas Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Burston Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo V1": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Nyx Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Volt Prime Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Dual Kamas Prime Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Nova Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				}
+			],
+			"vaulted": true
+		},
+		"Neo V2": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vauban Prime Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Galatine Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fang Prime Handle",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Braton Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Neo V3": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vauban Prime Neuroptics Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Tigris Prime Receiver",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Galatine Prime Blade",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Carrier Prime Systems",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo V4": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Venka Prime Gauntlet",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Saryn Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Ash Prime Neuroptics Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Cernos Prime Grip",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Tigris Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Bronco Prime Receiver",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": true
+		},
+		"Neo V5": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vauban Prime Neuroptics Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Burston Prime Barrel",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Helios Prime Carapace",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Paris Prime String",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Silva & Aegis Prime Hilt",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		},
+		"Neo V6": {
+			"state": "Intact",
+			"rewards": [
+				{
+					"itemName": "Vauban Prime Chassis Blueprint",
+					"rarity": "r",
+					"chance": 2
+				},
+				{
+					"itemName": "Mirage Prime Systems Blueprint",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Fragor Prime Handle",
+					"rarity": "u",
+					"chance": 11
+				},
+				{
+					"itemName": "Burston Prime Stock",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Cernos Prime Grip",
+					"rarity": "c",
+					"chance": 25.33
+				},
+				{
+					"itemName": "Forma Blueprint",
+					"rarity": "c",
+					"chance": 25.33
+				}
+			],
+			"vaulted": false
+		}
+	}
+}

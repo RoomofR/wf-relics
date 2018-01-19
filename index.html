@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WF Relic Checklist</title>
-	<link rel="stylesheet" href="style.css?4">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div id="searchBars">
 		<div id="searchParts" class="searchBar">
 			<input id="searchPartsBar" type='text' placeholder="Search Parts and Blueprints..." onkeyup='searchPart(this)'/>
 			<button id="showParts" onclick="toggleSetting(this)" title="Hide Parts"><img id="stock" src="https://i.imgur.com/vNDFczG.png"></button>
+
+
 			<button id="showVaultedParts" onclick="toggleSetting(this)" title="Show Vaulted Items"><img id="vaultPart" src="https://i.imgur.com/RbCgY36.png"></button>
 			<ul id="parts" class="searchList"></ul>
 			<ul id="partHistory" class="history"></ul>
@@ -17,11 +20,14 @@
 		<div id="searchRelics" class="searchBar">
 			<input id="searchRelicsBar" type='text' placeholder="Search Relics..." onkeyup='searchRelic(this)'/>
 			<button id="showVaultedRelics" onclick="toggleSetting(this)" title="Show Vaulted Relics"><img id="vaultRelic" src="https://i.imgur.com/RbCgY36.png"></button>
+
+
+			<input type="button" id="showVaultedRelics" onclick="toggleSetting(this)" title="Show Vaulted Relics" style="background: url('/icons.png') norepeat" />
+
 			<ul id="relics" class="searchList"></ul>
 			<ul id="relicHistory" class="history"></ul>
 		</div>
 	</div>
 </body>
-<script src="js/lz-string.js"></script>
-<script src="js/script.js?6"></script>
+<script src="js/script.js"></script>
 </html>
